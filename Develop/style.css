@@ -10,10 +10,15 @@ body {
 header {
   background-color: rgba(162, 127, 190, 0.596);
   box-shadow: 1px 9px 22px 9px #241730a1;
+  border: solid #3a1e42;
   border-radius: 70px;
   margin: 30px;
   color: rgb(231, 238, 128);
   text-shadow: 0px 0px 5px #3a1e42;
+}
+
+#currentDay {
+  position: sticky;
 }
 
 textarea {

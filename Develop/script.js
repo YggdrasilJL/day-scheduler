@@ -1,7 +1,12 @@
 // removed all comments to try to figure this out by adding my own comments
-
+let textArea = $('.description')
 // this makes sure that none of this code is executed until the document (HTML) loads so theres no conflicts
 $(document).ready(function() {
+
+  // $(window).scroll(function() {
+  //   let 
+  // })
+
   $(function () {
     let saveBtn = $('.saveBtn');
     // this saves the text inside textarea, 
@@ -10,6 +15,14 @@ $(document).ready(function() {
       let timeBlockId = $(this).parent().attr('id');
       localStorage.setItem(timeBlockId, userInput);
     });
+
+    $(textArea).keydown(function(event) {
+      event.preventDefault()
+      if (event.which === 13) {
+      let userInput = $(this).val();
+      let timeBlockId = $(this).parent().attr('id');
+      localStorage.setItem(timeBlockId, userInput);
+    }});
 
     
     $('.time-block').each(function() {
