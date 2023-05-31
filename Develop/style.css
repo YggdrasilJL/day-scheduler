@@ -1,6 +1,19 @@
 body {
+  background-color: rgb(127, 111, 134);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+}
+
+header {
+  background-color: rgba(162, 127, 190, 0.596);
+  box-shadow: 1px 9px 22px 9px #241730a1;
+  border-radius: 70px;
+  margin: 30px;
+  color: rgb(231, 238, 128);
+  text-shadow: 0px 0px 5px #3a1e42;
 }
 
 textarea {
@@ -20,28 +33,45 @@ textarea {
   border-radius: 15px;
 }
 
+.container-fluid {
+  width: 95%;
+  background-color: rgba(196, 154, 231, 0.596);
+  padding: 30px;
+  margin: 50px;
+  border: solid #3a1e42;
+  box-shadow: 1px 12px 22px 9px #241730a1;
+  border-radius: 40px;
+}
+
+.material-symbols-outlined {
+  display: flex;
+  
+}
+
 .row {
-  border-top: 1px solid white;
+  border: 1px solid #3a1e42;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: rgb(139, 189, 150);
   color: #000000;
   border-top: 1px dashed #000000;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #9fcea2b0;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #d36e6e;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #4f9e4a;
   color: white;
 }
 
@@ -49,7 +79,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #00d0ff;
   color: white;
 }
 
