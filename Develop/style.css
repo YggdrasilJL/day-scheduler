@@ -1,5 +1,11 @@
+* {
+  cursor: url('/Assets/images/cursor.png'), auto;
+  font-family: 'Merienda', 'Courier New', Courier, monospace;
+}
+
 body {
-  background-color: rgb(127, 111, 134);
+  background-image: url('/Assets/images/pexels-photo-3780104.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,13 +14,16 @@ body {
 }
 
 header {
-  background-color: rgba(162, 127, 190, 0.596);
   box-shadow: 1px 9px 22px 9px #241730a1;
-  border: solid #3a1e42;
+  border: 4px dashed #8b854a;
   border-radius: 70px;
   margin: 30px;
   color: rgb(231, 238, 128);
   text-shadow: 0px 0px 5px #3a1e42;
+}
+
+.material-symbols-outlined {
+  margin: 30px;
 }
 
 #currentDay {
@@ -30,6 +39,10 @@ textarea {
   padding: 10px;
 }
 
+textarea:focus {
+  border: dashed 4px rgb(0, 217, 255);
+}
+
 .description {
   white-space: pre-wrap;
 }
@@ -39,11 +52,11 @@ textarea {
 }
 
 .container-fluid {
-  width: 95%;
-  background-color: rgba(196, 154, 231, 0.596);
+  transform: scale(0.8);
+  width: 120%;
   padding: 30px;
   margin: 50px;
-  border: solid #3a1e42;
+  border: 4px dashed #8b854a;
   box-shadow: 1px 12px 22px 9px #241730a1;
   border-radius: 40px;
 }
@@ -60,13 +73,14 @@ textarea {
 .hour {
   background-color: rgb(139, 189, 150);
   color: #000000;
+  font-size: 20px;
   border-top: 1px dashed #000000;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
 
 .past {
-  background-color: #9fcea2b0;
+  background-color: #8ab68db0;
   color: white;
 }
 
@@ -84,7 +98,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #00d0ff;
+  background-color: #2483ff;
   color: white;
 }
 
