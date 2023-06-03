@@ -42,6 +42,8 @@ $(document).ready(function() {
       let currentIndex = $(textArea).index(this)
       let prevTextArea = $(textArea).eq(currentIndex - 1)
       prevTextArea.focus()
+    } if (event.key === 'Enter'){
+      event.preventDefault()
     }});
 
     $('.time-block').each(function() {

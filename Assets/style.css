@@ -1,10 +1,10 @@
 * {
-  cursor: url('/Assets/images/cursor.png'), auto;
+  cursor: url('images/cursor.png'), auto;
   font-family: 'Merienda', 'Courier New', Courier, monospace;
 }
 
 body {
-  background-image: url('/Assets/images/pexels-photo-3780104.jpg');
+  background-image: url('images/pexels-photo-3780104.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: #ffffff;
   border-left: 1px solid black;
   padding: 10px;
 }
